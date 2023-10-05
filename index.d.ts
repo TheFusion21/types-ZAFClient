@@ -16,3 +16,5 @@ declare var ZAFClient: {
 interface ZAFClientInstance {
 
 }
+
+export = ZAFClient;
