@@ -117,9 +117,10 @@ interface ZAFInstance {
 
    * Some path segments can take arguments that you can specify using a colon syntax. For example, to set the due date of a task, you could call client.set('ticket.customField:due_date', new Date()).
    * @param key the path to which to set the value val
+   * @param value the value to set
    * @returns A JavaScript Promise object.
    */
-  set(key: string): Promise<ZAFGetSetResponse>;
+  set(key: string, value: string): Promise<ZAFGetSetResponse>;
   /**
    * Sets data in the UI asynchronously. For a complete list of supported paths, see:
    * - Core Apps API
