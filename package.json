@@ -11,12 +11,12 @@
     "url": "https://github.com/TheFusion21/types-ZAFClient/issues"
   },
   "homepage": "https://github.com/TheFusion21/types-ZAFClient#readme",
-  "types": "index.d.ts",
+  "types": "global.d.ts",
   "main": "",
   "exports": {
     ".": {
       "types": {
-        "default": "./index.d.ts"
+        "default": "./global.d.ts"
       }
     }
   }
