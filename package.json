@@ -1,9 +1,9 @@
 {
-  "name": "types-zafclient",
+  "name": "@types/zafclient",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheFusion21/types-ZAFClient.git"
+    "url": "https://github.com/TheFusion21/types-ZAFClient.git"
   },
   "author": "Kay Hennig",
   "license": "MIT",
@@ -12,5 +12,12 @@
   },
   "homepage": "https://github.com/TheFusion21/types-ZAFClient#readme",
   "types": "index.d.ts",
-  "main": ""
+  "main": "",
+  "exports": {
+    ".": {
+      "types": {
+        "default": "./index.d.ts"
+      }
+    }
+  }
 }
