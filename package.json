@@ -10,5 +10,7 @@
   "bugs": {
     "url": "https://github.com/TheFusion21/types-ZAFClient/issues"
   },
-  "homepage": "https://github.com/TheFusion21/types-ZAFClient#readme"
+  "homepage": "https://github.com/TheFusion21/types-ZAFClient#readme",
+  "types": "index.d.ts",
+  "main": ""
 }

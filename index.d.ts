@@ -218,4 +218,13 @@ interface XHRProperties {
   timeout?: number;
 }
 
-export = ZAFClient;
+export {
+  ZAFClient,
+  ZAFInstance,
+  ZAFContext,
+  ZAFGetSetResponse,
+  ZAFMetadata,
+  ZAFSettings,
+  ZAFRequestOptions,
+  XHRProperties
+};
