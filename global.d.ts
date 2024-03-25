@@ -122,7 +122,7 @@ declare namespace ZAF {
      * @param value the value to set
      * @returns A JavaScript Promise object.
      */
-    set(key: string, value: string): Promise<ZAFGetSetResponse>;
+    set(key: string, value: any): Promise<ZAFGetSetResponse>;
     /**
      * Sets data in the UI asynchronously. For a complete list of supported paths, see:
      * - Core Apps API
@@ -134,7 +134,7 @@ declare namespace ZAF {
      * @param obj an object containing the keys and values to update
      * @returns A JavaScript Promise object.
      */
-    set(obj: any): Promise<ZAFGetSetResponse>;
+    set(obj: { [key: string]: any }): Promise<ZAFGetSetResponse>;
     /**
      * Triggers the specified event on the client.
      * @param name the name of the event you want to trigger
@@ -173,11 +173,20 @@ declare namespace ZAF {
    * The client metadata
    */
   interface ZAFMetadata {
-    appId: string;
+    appId: number;
     name: string;
     installationId: number;
     version: string;
+    stripe_subscription_id?: string;
+    plan?: ZAFPlan;
     settings: ZAFSettings;
+  }
+
+  /**
+   * The client plan
+   */
+  interface ZAFPlan {
+    name: string;
   }
 
   interface ZAFSettings {
